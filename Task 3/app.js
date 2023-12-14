@@ -38,15 +38,16 @@ app.get('/', (req, res) => {
 
   async function handle_query(input_url){
     movie_urls=[] //List of movies in the pod
-    engine.queryBindings(``, { //TODO: complete SPARQL query
+    engine.queryBindings('SELECT ?v WHERE { ?container <http://www.w3.org/ns/ldp#contains> ?v . }', { //TODO: complete SPARQL query
     sources: [input_url],
   }).then(function (bindingsStream) {
     bindingsStream.on('data', function (data) {
       movie_urls.push(data.get('v').value)
     });
-    engine.queryBindings(``, { //TODO: complete SPARQL query
+    engine.queryBindings('SELECT ?name ?image WHERE { ?movie <https://schema.org/name> ?name. ?movie <https://schema.org/image> ?image.}', { //TODO: complete SPARQL query
     sources: movie_urls,
   }).then(function (bindingsStream) {
+      console.log("Movie urls: ", movie_urls)
     bindingsStream.on('data', function (data) {
       obj = {
         "name": data.get('name').value,
@@ -57,8 +58,8 @@ app.get('/', (req, res) => {
   });
   });
   }
-  
-  
-  
-  httpServer.listen(port), 
+
+
+
+  httpServer.listen(port),
       () => console.log("Server is running... on "+port);
