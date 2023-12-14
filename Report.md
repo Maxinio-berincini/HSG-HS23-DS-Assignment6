@@ -1,4 +1,4 @@
-Assignment 6 Solution
+Assignment 6
 ---------------------
 
 # Team Members

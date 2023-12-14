@@ -1,11 +1,9 @@
-# Fault-Tolerant Key/Value Service
+# Distributed Knowledge Graphs
 
 
 ## Project Structure
 
 ```bash
-bin #A folder to put your scripts (.bat for Windows or .sh for macOS and Linux)
-images #A folder where to put the screenshots that you generate.
 Task 3 #A node project to implement a HTTP server for Task 3
 └── app.js # The server code (TODO: complete)
 └── index.html #The Web page
