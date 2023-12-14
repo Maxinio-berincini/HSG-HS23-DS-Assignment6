@@ -3,24 +3,32 @@ Assignment 6
 
 # Team Members
 
-- Sanjiv Jha
-- Jérémy Lemée
-- Andrei Ciortea
+- Felix Kappeler
+- Leon Luca Klaus Muscat
+- Max Beringer
 
 # GitHub link to your (forked) repository
 
-...
+> https://github.com/Maxinio-berincini/HSG-HS23-DS-Assignment6
 
 # Task 1
 
 1. WebIDs of the group members
 
 Ans:
+> Felix Kappeler: https://solid.interactions.ics.unisg.ch/FeKap/profile/card#me
+>
+> Leon Luca Klaus Muscat: https://solid.interactions.ics.unisg.ch/LeMus/profile/card#me
+>
+> Max Beringer: https://solid.interactions.ics.unisg.ch/MaBer/profile/card#me
 
 
 2. Group profile
 
 Ans:
+
+> DefinitlyNotAVirus:
+> https://solid.interactions.ics.unisg.ch/MaBer/bcs-ds-2023-DefinitelyNotAVirus-group
 
 
 
